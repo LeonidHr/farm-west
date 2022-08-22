@@ -1,0 +1,237 @@
+.footer {
+  background: rgba(53, 64, 70, 0.5);
+  // .footer__cotnainer
+
+  &__cotnainer {
+  }
+
+  // .footer__main
+
+  &__main {
+    @include adaptiv-value('padding-top', 68, 30, 1);
+    @include adaptiv-value('padding-bottom', 95, 30, 1);
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    @include adaptiv-value('padding-bottom', 56, 30, 1);
+    @include adaptiv-value('padding-top', 56, 30, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(20);
+
+    @media (max-width: $mobile){
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  // .footer__copy
+
+  &__copy {
+    font-weight: 300;
+    font-size: rem(12);
+    line-height: 108%;
+  }
+
+  // .footer__menu
+
+  &__menu {
+  }
+}
+
+.main-footer {
+  display: grid;
+  column-gap: rem(20);
+  row-gap: rem(40);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: rem(20);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+
+  @media (max-width: $tablet){
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $mobileSmall){
+    grid-template-columns: repeat(1, 1fr);
+  }
+  // .main-footer__info
+
+  &__info {
+    max-width: rem(300);
+
+    @media (max-width: $tablet){
+      order: 1;
+    }
+  }
+
+  // .main-footer__logo
+
+  &__logo {
+    display: inline-block;
+    &:not(:last-child) {
+      @include adaptiv-value('margin-bottom', 24, 18, 1);
+    }
+  }
+
+  // .main-footer__text
+
+  &__text {
+    &:not(:last-child) {
+      @include adaptiv-value('margin-bottom', 24, 18, 1);
+    }
+  }
+
+  // .main-footer__form
+
+  &__form {
+    @media (min-width: $mobileSmall){
+      justify-self: center;
+    }
+    @media (max-width: $tablet){
+      order: 3;
+      grid-column: span 2;
+    }
+  }
+
+  // .main-footer__contacts
+
+  &__contacts {
+    display: flex;
+    @include adaptiv-value('gap', 48, 25, 1);
+
+    @media (max-width: rem(1080)){
+      flex-direction: column;
+    }
+
+    @media (min-width: $mobileSmall){
+      justify-self: end;
+    }
+
+    @media (max-width: $tablet){
+      order: 2;
+    }
+    @media (max-width: $mobileSmall){
+      grid-column: span 2;
+    }
+  }
+
+  // .main-footer__social
+
+  &__social {
+  }
+
+  // .main-footer__label
+
+  &__label {
+    font-size: rem(16);
+    font-weight: 600;
+    line-height: 112%;
+    &:not(:last-child) {
+      @include adaptiv-value('margin-bottom', 24, 18, 1);
+    }
+  }
+
+  // .main-footer__call-us
+
+  &__call-us {
+    @media (min-width: rem(1100)){
+      padding: 0 rem(23) 0 0;
+    }
+  }
+
+  // .main-footer__phone
+
+  &__phone {
+    font-size: rem(16);
+    line-height: 119%;
+    font-weight: 300;
+  }
+}
+
+.form-footer {
+
+  // .form-footer__text
+
+  &__text {
+    max-width: rem(370);
+    &:not(:last-child) {
+      @include adaptiv-value('margin-bottom', 24, 18, 1);
+    }
+  }
+
+  // .form-footer__form
+
+  &__form {
+    &:not(:last-child) {
+      @include adaptiv-value('margin-bottom', 24, 18, 1);
+    }
+  }
+}
+
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: rem(16);
+  // .social__item
+
+  &__item {
+    flex: 0 0 rem(48);
+    width: rem(48);
+    height: rem(48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+    &::before {
+      color: $greenColor;
+      font-size: rem(27);
+      transition: all 0.3s ease 0s;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
+.menu-footer {
+
+  // .menu-footer__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include adaptiv-value('gap', 40, 15, 1);
+
+    @media (max-width: $mobile){
+      justify-content: center;
+    }
+  }
+
+  // .menu-footer__item
+
+  &__item {
+  }
+
+  // .menu-footer__link
+
+  &__link {
+    font-size: rem(14);
+    line-height: 114%;
+    transition: color 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $greenColor
+      }
+    }
+  }
+}
