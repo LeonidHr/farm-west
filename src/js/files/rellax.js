@@ -1,10 +1,12 @@
 import Rellax from 'rellax';
 
 var rellax = new Rellax('.rellax', {
-  speed: -2,
-  center: false,
-  wrapper: null,
+  breakpoints:[480, 768, 1201],
+  speed: 4,
+  center: true,
   round: true,
   vertical: true,
-  horizontal: false
+  horizontal: false,
 });
+
+var rellaxIc = new Rellax('.rellax-ic', {});

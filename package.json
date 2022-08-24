@@ -37,11 +37,13 @@
     "gulp-webp-html-nosvg": "latest",
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
-    "rellax": "^1.12.1",
     "sass": "latest",
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack": "latest",
     "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "rellax": "^1.12.1"
   }
 }

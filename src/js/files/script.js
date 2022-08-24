@@ -30,13 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (btnLink) {
       const currentSection = document.querySelector(btnLink);
 
+      document.documentElement.classList.remove("menu-open");
+      document.documentElement.classList.remove('lock');
+
       window.scrollBy({
         top: currentSection.getBoundingClientRect().top,
         behavior: "smooth",
       });
       
-      document.documentElement.classList.remove("menu-open");
-      document.body.classList.remove('_lock');
     }
   }
 });
