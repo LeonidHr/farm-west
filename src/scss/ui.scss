@@ -9,6 +9,7 @@
   display: inline-block;
   transition: all 0.3s ease 0s;
 
+
   @media (min-width: $tablet){
     min-width: rem(142);
   }
@@ -19,11 +20,27 @@
     }
   }
 
+  @media(prefers-color-scheme) {
+    color: $mainColor;
+    background-color: $darkGreenColor;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $greenColor;
+      }
+    }
+  }
+
 	// .btn_no-bg
 
 	&_no-bg {
     outline: 1px solid #FFFFFF;
     background-color: inherit;
+
+    @media(prefers-color-scheme: light) {
+      color: $mainColorDark;
+      outline: 1px solid $mainColorDark
+    }
 
     @media (any-hover: hover) {
       &:hover {
@@ -63,12 +80,20 @@
   
   span {
     color: $greenColor;
+
+    @media(prefers-color-scheme: light) {
+      color: $darkGreenColor;
+    }
   }
 }
 
 .text {   
   line-height: 180%;
   font-weight: 300;
+
+  @media(prefers-color-scheme: light) {
+    font-weight: 400;
+  }
 }
 
 //===============================================================================
@@ -82,6 +107,11 @@
   align-items: center;
   padding: rem(6);
   transition: all 0.3s ease 0s;
+
+  @media(prefers-color-scheme: light) {
+    background: rgba(38, 50, 56, 0.1);
+  }
+
 
   @media (min-width: $pc){
     width: rem(533);
@@ -99,6 +129,7 @@
     line-height: 111%;
     color: $mainColorDark;
     transition: all 0.3s ease 0s;
+    background: transparent;
 
     &::placeholder {
       color: $mainColorDark;
@@ -140,6 +171,10 @@
   @include adaptiv-value('padding-left', 40, 20, 1);
   @include adaptiv-value('padding-right', 40, 20, 1);
 
+  @media(prefers-color-scheme: light) {
+    background: rgba(0, 128, 0, 0.05);
+  }
+
   &__circle {
     position: absolute;
     top: 0;
@@ -155,7 +190,10 @@
       border: 1px solid rgba(255, 255, 255, 0.37);
       @include adaptiv-value('width', 585, 200, 1);
       @include adaptiv-value('height', 585, 200, 1);
-   
+
+      @media(prefers-color-scheme: light) {
+        border: 1px solid $darkGreenColor;
+      }
     }
 
     &_rev {
@@ -215,5 +253,7 @@
 }
 //==============================================================================
 
-
+.rellax {
+  transition: all 0.1s ease 0s;
+}
 

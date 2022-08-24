@@ -1,5 +1,9 @@
 .footer {
   background: rgba(53, 64, 70, 0.5);
+  @media(prefers-color-scheme: light) {
+    background: rgba(242, 248, 242, 0.5);  
+  }
+
   // .footer__cotnainer
 
   &__cotnainer {
@@ -49,6 +53,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template: rem(20);
   border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+  @media(prefers-color-scheme: light) {
+    border-bottom: 1px solid rgba(38, 50, 56, 0.31);  
+  }
 
   @media (max-width: $tablet){
     grid-template-columns: repeat(2, 1fr);
@@ -193,11 +200,25 @@
       color: $greenColor;
       font-size: rem(27);
       transition: all 0.3s ease 0s;
+
+      @media(prefers-color-scheme: light) {
+      color: #ffffff;
+    }
     }
 
     @media (any-hover: hover) {
       &:hover {
         background-color: rgb(255, 255, 255, 0.6);
+      }
+    }
+
+    @media(prefers-color-scheme: light) {
+      background-color: $darkGreenColor;
+
+      @media (any-hover: hover) {
+        &:hover {
+          background-color: $greenColor;
+        }
       }
     }
   }

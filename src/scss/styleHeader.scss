@@ -12,6 +12,10 @@
 			background-color: rgba(0, 0, 0, 0.5);
 			padding-top: rem(10);
 			padding-bottom: rem(10);
+
+			@media(prefers-color-scheme: light) {
+				background-color: rgba(216, 216, 190, 0.5);
+			}
 		}
 	}
 
@@ -94,6 +98,10 @@
 			gap: rem(17);
 			@include adaptiv-value('padding-top', 140, 90, 1);
 
+			@media(prefers-color-scheme: light) {
+				background-color: $mainColor;
+			}
+
 			&::before {
 				content: '';
 				position: fixed;
@@ -104,6 +112,10 @@
 				z-index: 2;
 				background-color: #11191d;
 				@include adaptiv-value('height', 112, 72, 1);
+
+				@media(prefers-color-scheme: light) {
+					background-color: rgba(216, 216, 190, 0.5);
+				}
 			}
 
 			.menu-open & {
@@ -183,7 +195,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #fff;
+			background-color: #ffffff;
 
 			@media(prefers-color-scheme: light) {
 				background-color: $mainColorDark;
