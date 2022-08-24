@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220822214359">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220824135149">
   <title>FarmVest</title>
 </head>
   <body>
@@ -12,7 +12,10 @@
       <header class="header">
   <div class="header__wrapper">
     <div class="header__container _container-big">
-      <a class="header__logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+      <a class="header__logo" href="#">
+        <img src="img/logo.svg" alt="logo" data-dark>
+        <img src="img/logo-dark.svg" alt="logo" data-light>
+      </a>
       <div class='menu header__menu'>
         <nav class='menu__body'>
           <ul class='menu__list'>
@@ -53,29 +56,36 @@
                   </form>
                 </div>
               </div>
-              <div data-rellax-speed="-7" class="mainscreen__icons icons-mainscreen rellax">
+              <div data-rellax-speed="-3" class="mainscreen__icons icons-mainscreen rellax">
                 <div class="icons-mainscreen__circle icons-mainscreen__circle_1" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500"></div>
                 <div class="icons-mainscreen__circle icons-mainscreen__circle_2" data-prlx-mouse data-prlx-cx="500" data-prlx-cy="500" data-prlx-dxr data-prlx-dyr></div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" class="icons-mainscreen__item icons-mainscreen__item_1 ">
                   <img src="img/mainscreen/icons/1.svg" alt="icon">
+                  <img src="img/mainscreen/iconsDark/1.svg" alt="icon">
                 </div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" data-prlx-dxr data-prlx-dyr class="icons-mainscreen__item icons-mainscreen__item_2">
-                  <img src="img/mainscreen/icons/2.svg" alt="icon">
+                  <img src="img/mainscreen/icons/2.svg" alt="icon" data-dark>
+                    <img src="img/mainscreen/iconsDark/2.svg" alt="icon" data-light>
                 </div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" class="icons-mainscreen__item icons-mainscreen__item_3">
-                  <img src="img/mainscreen/icons/3.svg" alt="icon">
+                  <img src="img/mainscreen/icons/3.svg" alt="icon" data-dark>
+                  <img src="img/mainscreen/iconsDark/3.svg" alt="icon" data-light>
                 </div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" data-prlx-dxr data-prlx-dyr class="icons-mainscreen__item icons-mainscreen__item_4">
-                  <img src="img/mainscreen/icons/4.svg" alt="icon">
+                  <img src="img/mainscreen/icons/4.svg" alt="icon" data-dark>
+                    <img src="img/mainscreen/iconsDark/4.svg" alt="icon" data-light>
                 </div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" class="icons-mainscreen__item icons-mainscreen__item_5">
-                  <img src="img/mainscreen/icons/5.svg" alt="icon">
+                  <img src="img/mainscreen/icons/5.svg" alt="icon" data-dark>
+                  <img src="img/mainscreen/iconsDark/5.svg" alt="icon" data-light>
                 </div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" data-prlx-dxr data-prlx-dyr class="icons-mainscreen__item icons-mainscreen__item_6">
-                  <img src="img/mainscreen/icons/7.svg" alt="icon">
+                  <img src="img/mainscreen/icons/7.svg" alt="icon" data-dark>
+                  <img src="img/mainscreen/iconsDark/6.svg" alt="icon" data-light>
                 </div>
                 <div data-prlx-mouse data-prlx-cx="4" data-prlx-cy="4" class="icons-mainscreen__item icons-mainscreen__item_7">
-                  <img src="img/mainscreen/icons/6.svg" alt="icon">
+                  <img src="img/mainscreen/icons/6.svg" alt="icon" data-dark>
+                  <img src="img/mainscreen/iconsDark/7.svg" alt="icon" data-light>
                 </div>
               </div>
             </div>
@@ -84,19 +94,24 @@
         <section class="page__partners partners">
           <div class="partners__container _container">
             <div class="partners__item">
-              <img src="img/companies/1.svg" alt="Partner">
+              <img src="img/companies/1.svg" alt="Partner" data-dark>
+              <img src="img/companiesLight/1.svg" alt="Partner" data-light>
             </div>
             <div class="partners__item">
-              <img src="img/companies/2.svg" alt="Partner">
+              <img src="img/companies/2.svg" alt="Partner" data-dark>
+              <img src="img/companiesLight/2.svg" alt="Partner" data-light>
             </div>
             <div class="partners__item">
-              <img src="img/companies/3.svg" alt="Partner">
+              <img src="img/companies/3.svg" alt="Partner" data-dark>
+              <img src="img/companiesLight/3.svg" alt="Partner" data-light>      
             </div>
             <div class="partners__item">
-              <img src="img/companies/4.svg" alt="Partner">
+              <img src="img/companies/4.svg" alt="Partner" data-dark>
+              <img src="img/companiesLight/4.svg" alt="Partner" data-light>    
             </div>
             <div class="partners__item">
-              <img src="img/companies/5.svg" alt="Partner">
+              <img src="img/companies/5.svg" alt="Partner" data-dark>
+              <img src="img/companiesLight/5.svg" alt="Partner" data-light>    
             </div>
           </div>
         </section>
@@ -250,7 +265,7 @@
               <a class="why__btn btn" href="#">Learn More</a>
             </div>
             <div class="why__image image-block">
-              <div data-rellax-speed="5"  data-rellax-percentage="0.2" class="image-block__item rellax">
+              <div data-rellax-speed="7"  data-rellax-percentage="0.5" class="image-block__item rellax">
                 <picture><source srcset="img/bigImg/3.webp" type="image/webp"><img src="img/bigImg/3.jpg" alt="Man"></picture>
               </div>
               <div class="image-block__circle image-block__circle_1" data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300"></div>
@@ -332,7 +347,8 @@
     <div class="footer__main main-footer">
       <div class="main-footer__info">
         <a href="#" class="main-footer__logo">
-          <img src="img/footer-logo.svg" alt="Logo">
+          <img src="img/footer-logo.svg" alt="Logo" data-dark>
+          <img src="img/footer-logo-dark.svg" alt="Logo" data-light>
         </a>
         <div class="main-footer__text text">
           <p>
@@ -389,6 +405,6 @@
   </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20220822214359"></script>
+    <script src="js/app.min.js?_v=20220824135149"></script>
   </body>
 </html>
