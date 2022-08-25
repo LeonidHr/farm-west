@@ -7,21 +7,8 @@ var rellax = new Rellax('.rellax', {
   horizontal: false,
 });
 
-var rellaxP = new Rellax('.rellax-p', {
-  speed: 4,
-  center: true,
-  vertical: true,
-  horizontal: false,
-});
-
-var rellaxW = new Rellax('.rellax-w', {
-  speed: 4,
-  center: true,
-  vertical: true,
-  horizontal: false,
-});
+var rellaxIc = new Rellax('.rellax-ic', {});
 
 if (window.innerWidth <= 500) {
-  rellaxP.destroy();
-  rellaxW.destroy();
+  rellax.destroy();
 }
