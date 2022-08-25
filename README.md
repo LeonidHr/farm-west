@@ -14,12 +14,12 @@ npm run dev
 ```
 
 ## \#Demo
-[FarmWest](https://github.com/LeonidHr/farm-west/)
+[FarmWest](https://leonidhr.github.io/farm-west/)
 
 
 ## \#Libraries
 
-[Rellax](https://swiperjs.com)
+[Rellax](https://github.com/dixonandmoe/rellax)
 
 ``` js
 import Rellax from 'rellax';
