@@ -13,8 +13,16 @@
   },
   "author": "LeonidHr",
   "license": "ISC",
+  "browserslist": [
+    "> 1%"
+  ],
   "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "babel-loader": "^8.2.5",
     "browser-sync": "latest",
+    "core-js": "^3.25.2",
     "del": "6.0.0",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
@@ -44,6 +52,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "rellax": "^1.12.1"
   }
 }
