@@ -7,15 +7,22 @@ npm i
 ```
 __After__
 ```
-npm run build
-```
-```
 npm run dev
+```
+__For build project__
+```
+npm run build
 ```
 
 ## \#Demo
-[FarmWest](https://leonidhr.github.io/farm-west/)
+[https://leonidhr.github.io/farm-west/](https://leonidhr.github.io/farm-west/)
 
+<img src="img/preview.gif" width="726">
+
+## \#Features
+* Parallax effect on mouse movement
+* Parallax effect on scroll
+* Sending an email using PHPMailer
 
 ## \#Libraries
 
